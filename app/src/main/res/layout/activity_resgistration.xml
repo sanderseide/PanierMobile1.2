@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".RegistrationActivity"
+android:background="@color/white">
+
+<ImageView
+    android:id="@+id/reg_img"
+    android:layout_width="match_parent"
+    android:layout_height="170dp"
+    android:src="@mipmap/icon"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"/>
+
+<EditText
+    android:id="@+id/name_reg"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/edittext_background"
+    android:hint="  Name"
+    android:padding="10dp"
+    android:textSize="15dp"
+    android:textColor="@color/white"
+    android:elevation="3dp"
+    app:layout_constraintWidth_percent=".8"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/reg_img"
+    android:drawablePadding="10dp"/>
+
+<EditText
+    android:id="@+id/email_reg"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/edittext_background"
+    android:hint="  Email"
+    android:padding="10dp"
+    android:textSize="15dp"
+    android:textColor="@color/white"
+    android:elevation="3dp"
+    android:layout_marginTop="10dp"
+    app:layout_constraintWidth_percent=".8"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/name_reg"
+    android:drawablePadding="10dp"/>
+
+<EditText
+    android:id="@+id/passeword_reg"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/edittext_background"
+    android:drawablePadding="10dp"
+    android:elevation="3dp"
+    android:padding="10dp"
+    android:hint="  Mode passe"
+    android:textColor="@color/white"
+    android:textSize="15dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/email_reg"
+    app:layout_constraintWidth_percent=".8" />
+
+<EditText
+    android:id="@+id/phone_reg"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/edittext_background"
+    android:hint="  Mode passe"
+    android:padding="10dp"
+    android:textSize="15dp"
+    android:textColor="#fff"
+    android:paddingRight="5dp"
+    android:elevation="3dp"
+    android:layout_marginTop="10dp"
+    app:layout_constraintWidth_percent=".8"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/passeword_reg"
+    android:drawablePadding="10dp"/>
+
+<CheckBox
+    android:id="@+id/checkBox"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="2dp"
+    android:text="Termes et conditions"
+    android:textColor="#429262"
+    android:textSize="20dp"
+
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.497"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/phone_reg" />
+
+<Button
+    android:id="@+id/reg_btn"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:elevation="3dp"
+    android:padding="10dp"
+
+    android:text=" Creer mon compte"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.504"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="J'ai deja une counte!"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reg_btn"
+        app:layout_constraintVertical_bias="0.033" />
+
+    <TextView
+    android:id="@+id/sign_in"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text=" Mon compte"
+    android:textSize="18dp"
+    android:textColor="@color/purple_200"
+    android:textStyle="bold"
+    app:layout_constraintBottom_toBottomOf="@+id/textView"
+    app:layout_constraintStart_toEndOf="@+id/textView"
+    app:layout_constraintTop_toTopOf="@+id/textView"
+    app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

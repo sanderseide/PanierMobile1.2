@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "521867819718",
+    "project_id": "paniermobile2",
+    "storage_bucket": "paniermobile2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:521867819718:android:789034b377c7891306f5c7",
+        "android_client_info": {
+          "package_name": "com.example.paniermobil"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "521867819718-jkv6ac0earoe91d2jo5o69n3i7r8749t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBfYzKM7BBJhzNYG4Y2mvSbyfvDywL2DZI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "521867819718-jkv6ac0earoe91d2jo5o69n3i7r8749t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
