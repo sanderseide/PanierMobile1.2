@@ -22,4 +22,25 @@
         android:name="com.example.paniermobil.ui.slideshow.SlideshowFragment"
         android:label="@string/menu_slideshow"
         tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/nav_offers"
+        android:name="com.example.paniermobil.OffersFragment"
+        android:label="@string/offers"
+        tools:layout="@layout/fragment_offers" />
+    <fragment
+        android:id="@+id/nav_orders"
+        android:name="com.example.paniermobil.ordersFragment"
+        android:label="@string/my_orders"
+        tools:layout="@layout/fragment_orders" />
+    <fragment
+        android:id="@+id/nav_newProducts"
+        android:name="com.example.paniermobil.newProductsFragment"
+        android:label="new product"
+        tools:layout="@layout/fragment_new_products" />
+    <fragment
+        android:id="@+id/nav_myCarts"
+        android:name="com.example.paniermobil.myCartsFragment"
+        android:label="@string/my_carts"
+        tools:layout="@layout/fragment_my_carts" />
+
 </navigation>

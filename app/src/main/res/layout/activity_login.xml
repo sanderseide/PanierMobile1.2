@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity">
+    tools:context=".activities.LoginActivity">
 
     <ImageView
         android:id="@+id/reg_img"
@@ -20,7 +20,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@drawable/edittext_background"
-        android:hint="  Name"
+        android:hint="  Email"
         android:padding="10dp"
         android:textSize="15dp"
         android:textColor="@color/white"
@@ -36,11 +36,12 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@drawable/edittext_background"
-        android:hint="  Email"
+        android:hint="  Password"
         android:padding="10dp"
         android:textSize="15dp"
         android:textColor="@color/white"
         android:elevation="3dp"
+        android:inputType="textPassword"
         android:layout_marginTop="10dp"
         app:layout_constraintWidth_percent=".8"
         app:layout_constraintEnd_toEndOf="parent"
@@ -54,24 +55,38 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:elevation="3dp"
+        android:onClick="singIn"
         android:padding="10dp"
         android:text=" se connecter"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/passeword_login"/>
+        app:layout_constraintTop_toBottomOf="@+id/passeword_login"
+        tools:ignore="OnClick" />
 
     <Button
-        android:id="@+id/sign_up"
-        android:layout_width="285dp"
-        android:layout_height="49dp"
+        android:id="@+id/sign_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
+        android:onClick="singUp"
         android:elevation="3dp"
         android:padding="10dp"
         android:text=" creer mon compte"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/login_btn" />
+        app:layout_constraintTop_toBottomOf="@+id/login_btn"
+        tools:ignore="OnClick" />
 
-
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressbar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sign_in"
+        app:layout_constraintVertical_bias="0.1"
+        android:scaleX=".5"
+        android:scaleY=".5"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
