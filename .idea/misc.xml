@@ -3,7 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Alpha/Documents/Claudio-android/Paniermobile/app/src/main/res/layout/activity_about_us.xml" value="0.18" />
         <entry key="..\:/Users/Alpha/Documents/Claudio-android/Paniermobile/app/src/main/res/layout/activity_login.xml" value="0.22" />
+        <entry key="..\:/Users/Alpha/Documents/Claudio-android/Paniermobile/app/src/main/res/layout/activity_new_product.xml" value="0.12239583333333333" />
+        <entry key="..\:/Users/Alpha/Documents/Claudio-android/Paniermobile/app/src/main/res/layout/activity_user_profile.xml" value="0.12239583333333333" />
+        <entry key="..\:/Users/Alpha/Documents/Claudio-android/Paniermobile/app/src/main/res/layout/new_products.xml" value="0.12239583333333333" />
         <entry key="..\:/Users/Alpha/Documents/Claudio-android/Paniermobile/app/src/main/res/menu/activity_main_drawer.xml" value="0.33" />
         <entry key="..\:/Users/Alpha/Documents/Claudio-android/Paniermobile/app/src/main/res/menu/main.xml" value="0.21" />
         <entry key="..\:/Users/Alpha/Documents/Claudio-android/Paniermobile/app/src/main/res/menu/main_menu.xml" value="0.21" />

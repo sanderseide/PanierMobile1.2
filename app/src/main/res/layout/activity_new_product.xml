@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.new_product">
+
+    <TextView
+        android:id="@+id/product"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:padding="10sp"
+        android:text="Add a new product"
+        android:textColor="#4CAF50"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_productname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="10dp"
+        android:hint="Product Name"
+        app:layout_constraintEnd_toStartOf="@+id/et_product_price"
+        app:layout_constraintTop_toBottomOf="@+id/product"
+        android:layout_marginTop="20dp"
+
+
+        />
+
+    <EditText
+        android:id="@+id/et_product_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/et_productname"
+        android:hint="product price in Gourdes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/product"
+        android:layout_marginTop="20dp"
+        />
+
+    <EditText
+        android:id="@+id/et_productQuantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_productname"
+        android:hint="Product Quantity"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toStartOf="@id/et_product_category"
+
+        />
+
+
+
+
+    <EditText
+        android:id="@+id/et_product_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/et_productQuantity"
+        app:layout_constraintTop_toBottomOf="@id/et_product_price"
+        android:hint="Categories"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        />
+
+    <ImageView
+        android:id="@+id/iv_photo1"
+        android:layout_width="120dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/iv_photo2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_productQuantity"
+
+        tools:srcCompat="@drawable/claudio" />
+
+    <ImageView
+        android:id="@+id/iv_photo2"
+        android:layout_width="120dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/iv_photo3"
+        app:layout_constraintStart_toEndOf="@+id/iv_photo1"
+        app:layout_constraintTop_toBottomOf="@+id/et_productQuantity"
+        tools:srcCompat="@drawable/claudio" />
+
+    <ImageView
+        android:id="@+id/iv_photo3"
+        android:layout_width="120dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iv_photo2"
+        app:layout_constraintTop_toBottomOf="@+id/et_productQuantity"
+        tools:srcCompat="@drawable/claudio" />
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/btn2"
+        android:text="Photo 1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_photo1"
+        android:layout_marginTop="10dp"
+        />
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/btn3"
+        android:text="Photo 2"
+        app:layout_constraintStart_toEndOf="@+id/btn1"
+        app:layout_constraintTop_toBottomOf="@+id/iv_photo2"
+        android:layout_marginTop="10dp"
+        />
+
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Photo 3"
+        app:layout_constraintStart_toEndOf="@+id/btn2"
+        app:layout_constraintTop_toBottomOf="@+id/iv_photo3"
+        android:layout_marginTop="10dp"
+        />
+
+    <EditText
+        android:id="@+id/et_productDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toStartOf="@+id/et_product_price"
+        android:hint="Product Description"
+        app:layout_goneMarginStart="10dp"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn1" />
+
+    <Button
+        android:id="@+id/btnPost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Post"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_productDescription"
+        android:layout_marginTop="20dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
