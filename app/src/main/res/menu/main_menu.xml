@@ -7,4 +7,18 @@
        android:icon="@drawable/ic_baseline_menu"
        app:showAsAction="always"
        android:title="menu" />
+   <group>
+   <item
+       android:id="@+id/product"
+       android:orderInCategory="100"
+       android:title="My products"
+       app:showAsAction="never" />
+
+   <item
+       android:id="@+id/profile"
+       android:orderInCategory="100"
+       android:title="My Profile"
+       app:showAsAction="never" />
+   </group>
+
 </menu>

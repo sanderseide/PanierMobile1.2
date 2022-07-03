@@ -1,9 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
+
     <item
-        android:id="@+id/action_settings"
+        android:id="@+id/profile"
         android:orderInCategory="100"
-        android:title="@string/action_settings"
+        android:title="My Profile"
         app:showAsAction="never" />
+    <item
+        android:id="@+id/home"
+        android:orderInCategory="100"
+        android:title="Home"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/product"
+        android:orderInCategory="100"
+        android:title="New Product"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/my_product"
+        android:orderInCategory="100"
+        android:title="My product"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/language"
+        android:orderInCategory="100"
+        android:title="Change language"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/about"
+        android:orderInCategory="100"
+        android:title="About us"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/contact"
+        android:orderInCategory="100"
+        android:title="Contact us"
+        app:showAsAction="never" />
+
+
 </menu>
