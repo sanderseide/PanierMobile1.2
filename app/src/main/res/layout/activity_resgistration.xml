@@ -4,7 +4,7 @@ xmlns:app="http://schemas.android.com/apk/res-auto"
 xmlns:tools="http://schemas.android.com/tools"
 android:layout_width="match_parent"
 android:layout_height="match_parent"
-tools:context=".RegistrationActivity"
+tools:context=".activities.RegistrationActivity"
 android:background="@color/white">
 
 <ImageView
@@ -71,7 +71,7 @@ android:background="@color/white">
     android:layout_width="0dp"
     android:layout_height="wrap_content"
     android:background="@drawable/edittext_background"
-    android:hint="  Mode passe"
+    android:hint="  Telephone"
     android:padding="10dp"
     android:textSize="15dp"
     android:textColor="#fff"
@@ -104,12 +104,13 @@ android:background="@color/white">
     android:layout_height="wrap_content"
     android:elevation="3dp"
     android:padding="10dp"
-
+    android:onClick="signup"
     android:text=" Creer mon compte"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintHorizontal_bias="0.504"
     app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+    app:layout_constraintTop_toBottomOf="@+id/checkBox"
+    tools:ignore="OnClick" />
 
     <TextView
         android:id="@+id/textView"
@@ -134,9 +135,23 @@ android:background="@color/white">
     android:textSize="18dp"
     android:textColor="@color/purple_200"
     android:textStyle="bold"
+    android:onClick="singin"
     app:layout_constraintBottom_toBottomOf="@+id/textView"
     app:layout_constraintStart_toEndOf="@+id/textView"
     app:layout_constraintTop_toTopOf="@+id/textView"
-    app:layout_constraintVertical_bias="0.0" />
+    app:layout_constraintVertical_bias="0.0"
+        tools:ignore="OnClick" />
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressbar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sign_in"
+        app:layout_constraintVertical_bias="0.1"
+        android:scaleX=".5"
+        android:scaleY=".5"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

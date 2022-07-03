@@ -16,5 +16,21 @@
             android:id="@+id/nav_slideshow"
             android:icon="@drawable/ic_menu_slideshow"
             android:title="@string/menu_slideshow" />
+        <item
+            android:id="@+id/nav_offers"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/offers" />
+        <item
+            android:id="@+id/nav_orders"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/my_orders" />
+        <item
+            android:id="@+id/nav_newProducts"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="new products" />
+        <item
+            android:id="@+id/nav_myCarts"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/my_carts" />
     </group>
 </menu>
