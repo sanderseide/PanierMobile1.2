@@ -64,14 +64,21 @@ public class MainActivity extends AppCompatActivity {
         return true;
     }
 
-//    @Override
-//    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-//        int id = item.getItemId();
-//        if ( id == R.id.menu_logout){
-//            auth.signOut();
-//            startActivity(new Intent(MainActivity.this, RegistrationActivity.class));
-//            finish();
-//        }else if(id == R.id.menu_cart){
-//            startActivity(new Intent(MainActivity.this,CartActivity.class));
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        int id =  item.getItemId();
+        if(id == R.id.home){
+            startActivity(new Intent(MainActivity.this, MainActivity.class));
+        }
+        else if (id == R.id.product){
+            startActivity(new Intent(MainActivity.this, new_product.class));
+        }
+        else if (id == R.id.about){
+            startActivity(new Intent(MainActivity.this, about_us.class));
+        }
 
+        return super.onOptionsItemSelected(item);
     }
+
+
+}
