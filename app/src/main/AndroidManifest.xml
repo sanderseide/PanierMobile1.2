@@ -12,6 +12,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Paniermobil">
         <activity
+            android:name=".activities.UserProfilActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activities.PaymentActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activities.AddAddressActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activities.AddressActivity"
+            android:exported="true" />
+        <activity
             android:name=".activities.CartActivity"
             android:exported="true" />
         <activity
@@ -43,6 +55,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="com.razorpay.ApiKey"
+            android:value="rzp_test_Kj1Q1NgWhcYTxy" />
     </application>
 
 </manifest>

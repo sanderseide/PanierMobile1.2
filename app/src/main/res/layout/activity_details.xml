@@ -6,6 +6,8 @@
     android:layout_height="match_parent"
     tools:context=".activities.DetailsActivity">
 
+
+
     <ImageView
         android:id="@+id/detailed_img"
         android:layout_width="match_parent"
@@ -15,6 +17,14 @@
         app:layout_constraintTop_toTopOf="parent"
         android:src="@mipmap/icon"
         android:scaleType="centerCrop"/>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/detailed_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardview"
@@ -128,7 +138,7 @@
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:src="@drawable/plus"
-                    android:id="@+id/add_item"/>
+                    android:id="@+id/remove_item"/>
 
                 <TextView
                     android:id="@+id/quantity"
@@ -143,7 +153,7 @@
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:src="@drawable/plus"
-                    android:id="@+id/remove_item"/>
+                    android:id="@+id/add_item"/>
 
             </LinearLayout>
         </LinearLayout>

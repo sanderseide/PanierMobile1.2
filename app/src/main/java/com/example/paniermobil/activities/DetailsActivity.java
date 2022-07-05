@@ -3,6 +3,7 @@ package com.example.paniermobil.activities;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Bundle;
@@ -11,6 +12,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+import androidx.appcompat.widget.Toolbar;
 
 import com.bumptech.glide.Glide;
 import com.example.paniermobil.Models.NewProductsModel;
@@ -34,6 +36,7 @@ public class DetailsActivity extends AppCompatActivity {
     Button addToCart, buyNow;
     ImageView addItems, removeItems;
 
+    Toolbar toolbar;
     int totalQuantity = 1;
     int totalPrice = 0;
     //New Products
@@ -44,7 +47,7 @@ public class DetailsActivity extends AppCompatActivity {
     FirebaseAuth auth;
     //Popular product
     PopularProductModel popularProductModel = null;
-    private FirebaseFirestore firestore;
+    private FirebaseFirestore firestore ;
     private Object drawableImage;
 
     @Override
@@ -52,6 +55,9 @@ public class DetailsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_details);
 
+        toolbar = findViewById(R.id.detailed_toolbar);
+        setSupportActionBar(toolbar);
+        //getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         firestore = FirebaseFirestore.getInstance();
         auth = FirebaseAuth.getInstance();
         final Object obj = getIntent().getSerializableExtra("detailed");
@@ -112,6 +118,27 @@ public class DetailsActivity extends AppCompatActivity {
             totalPrice = showAllModel.getPrice() * totalQuantity;
         }
 
+        //Buy Now
+        buyNow.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+               Intent intent = new Intent(DetailsActivity.this, AddressActivity.class);
+
+               if (newProductsModel != null){
+                   intent.putExtra("item", newProductsModel);
+               }
+               if (popularProductModel != null){
+                   intent.putExtra("item",popularProductModel);
+               }
+               if (showAllModel != null){
+                   intent.putExtra("item",showAllModel);
+               }
+               startActivity(intent);
+
+            }
+        });
+
+        //Add to cart
         addToCart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
