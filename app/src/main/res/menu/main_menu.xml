@@ -3,15 +3,22 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
    <item
+       android:id="@+id/menu"
        android:icon="@drawable/ic_baseline_menu"
-       android:id="@+id/menu_main"
        app:showAsAction="always"
-       android:title="Logout" />
-
+       android:title="menu" />
+   <group>
+   <item
+       android:id="@+id/product"
+       android:orderInCategory="100"
+       android:title="My products"
+       app:showAsAction="never" />
 
    <item
-       android:id="@+id/menu_my_cart"
-       android:icon="@drawable/ic_baseline_shopping_cart_24"
-       app:showAsAction="always"
-       android:title="My cart" />
+       android:id="@+id/profile"
+       android:orderInCategory="100"
+       android:title="My Profile"
+       app:showAsAction="never" />
+   </group>
+
 </menu>
